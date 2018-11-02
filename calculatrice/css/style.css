@@ -1,0 +1,24 @@
+#blocPage{
+   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+   }
+#bloc1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+input, select, #bouton{
+    border: 1px black solid;
+}
+
+#result{
+    border: 1px black solid;
+    height: 50px;
+}
