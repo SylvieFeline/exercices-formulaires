@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>formulaire de contact</title>
+</head>
+<body>
+    
+    <form id="contact">
+        <h1>contact</h1>
+        <div id="bloc1">
+            <div id="nom">
+                <label>Nom</label>
+                <input id="saisieNom" type="text" name="nom" placeholder="votre nom"  required>
+            </div> 
+            <div id="prenom">  
+                <label>Prénom</label>
+                <input id="saisiePrenom" type="text" name="prenom" placeholder="votre prénom" required>
+            </div>     
+            <div id="dateNaissance">   
+                <label>Date de naissance</label>
+                <input id="dateN" type="date" name="naissance" required>
+            </div>
+            <div id="sexeM">
+                <label>homme</label>
+                <input type="radio" name="sexe" value="homme">
+            </div>
+            <div id="sexeF">   
+                <label>femme</label>
+                <input type="radio" name="sexe" value="femme">
+            </div>
+        </div>
+        <div id="bloc2">
+            <div id="email">
+                <label>Email</label>
+                <input id="saisieMail" type="text" name="mail" placeholder="partieLocale@domaine.ext" required>
+            </div>   
+            <div id="message">
+
+                <label>Message</label>
+                <textarea id="textMessage" maxlength="255" placeholder="votre message est limité à 255 caractères" required></textarea>
+            </div>
+            <div id="compteur">
+                <p>restant: <em> 0</em> / 255</p>
+            </div>
+            <div id="bouton">
+                <div id="envoyer" onclick="action()">Envoyer</div>
+                <!-- <input type="submit" value="Envoyer"> -->
+            </div>
+        </div>
+
+    </form>
+
+
+
+
+<script src="js/script.js"></script>    
+</body>
+</html>

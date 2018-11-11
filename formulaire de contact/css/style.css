@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    align-content: center;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-image: linear-gradient(rgb(30, 65, 180),rgb(91, 151, 241));
+}
+#bloc1, #bloc2{
+    display: flex;
+    flex-direction: column;
+}
+#nom, #prenom, #dateNaissance, #sexeM, #sexeF, #email, #message {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+label{
+    width: 30%;
+    text-align: right;
+    margin-right: 20px;
+}
+input{
+    width: 70%;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    width: 70%;
+    margin-bottom: 0;
+}
+
+input[type=submit], #envoyer{
+    background-image:linear-gradient(rgb(46, 46, 110),white,rgb(46, 46, 110));
+    border: none;
+    width: 60%;
+    margin-left: 55%;
+    text-align: center;
+}
+ 
+#compteur p{
+    width: 70%;
+    margin-left: 50%;
+    text-align: center;
+    margin-top: 0;
+}
+#bouton, #compteur{
+    margin-left: 20px;
+    width: 50%;
+    margin: auto;
+}
+

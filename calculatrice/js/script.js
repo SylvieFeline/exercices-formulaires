@@ -58,11 +58,20 @@ function calc() {
     choixOp();
 }
 
-
-
-
-
-
+//changement en fonction taille ecran
+function redim(){
+    var textBouton = document.getElementById("bouton");
+    if ("matchMedia" in window) {   // détection
+// if (window.innerWidth>=900) {
+        if(window.matchMedia("(min-width:900px)").matches){
+            textBouton.innerHTML = " = ";   
+        } else {
+            textBouton.innerHTML = "calculer";
+        }
+    }
+}
+//  + lie evenement resize à la fonction
+window.addEventListener('resize', redim, false);
 
 
 
